@@ -7,11 +7,11 @@ import '@unocss/reset/tailwind.css'
 import './styles/main.css'
 import 'uno.css'
 
-const app = createApp(App)
-app.use(
-  createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes,
-  }),
-)
-app.mount('#app')
+createApp(App)
+  .use(
+    createRouter({
+      history: createWebHistory(import.meta.env.BASE_URL),
+      routes,
+    }),
+  )
+  .mount('#app')
